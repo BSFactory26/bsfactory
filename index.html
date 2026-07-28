@@ -7,58 +7,68 @@
     <style>
         body {
             background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #f0f6fc;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+            text-align: center;
+        }
+        .logo {
+            max-width: 140px;
+            height: auto;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 2rem;
-            margin-bottom: 5px;
+            font-size: 2.2rem;
+            margin: 0 0 8px 0;
             color: #ffffff;
-            letter-spacing: 1px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
         p {
             color: #8b949e;
-            font-size: 0.95rem;
-            margin-bottom: 40px;
+            font-size: 1rem;
+            margin: 0 0 35px 0;
         }
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 14px;
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
             padding: 0 20px;
             box-sizing: border-box;
         }
         .btn {
             background-color: #161b22;
-            color: #ffffff;
+            color: #f0f6fc;
             border: 1px solid #30363d;
-            padding: 15px 20px;
+            padding: 16px 20px;
             text-align: center;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 600;
             transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .btn:hover {
             background-color: #21262d;
             border-color: #8b949e;
+            transform: translateY(-1px);
         }
         footer {
-            margin-top: 50px;
+            margin-top: 45px;
             font-size: 0.85rem;
         }
         footer a {
             color: #8b949e;
             text-decoration: none;
+            transition: color 0.2s;
         }
         footer a:hover {
             color: #ffffff;
@@ -67,6 +77,9 @@
     </style>
 </head>
 <body>
+
+    <!-- Falls dein Logo anders heißt, passe hier den Dateinamen bei 'src' an -->
+    <img src="logo.png" alt="BS Factory Logo" class="logo">
 
     <h1>BS FACTORY</h1>
     <p>3D-Druck | Laser-Gravuren | Custom Merch</p>
